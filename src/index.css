@@ -1,0 +1,33 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+
+/* IMPORTANT: In "styled" mode you must add the PrimeReact Theme here. Do NOT include in "unstyled" mode */
+@import "primereact/resources/themes/lara-light-blue/theme.css"
+  layer(primereact);
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+@font-face {
+  font-family: "poppinsMedium";
+  src: url("./assets/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "poppinsLight";
+  src: url("./assets/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "poppinsBold";
+  src: url("./assets/Poppins-Bold.ttf");
+}
+
+* {
+  font-family: "poppinsMedium", sans-serif;
+}
